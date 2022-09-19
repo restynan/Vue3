@@ -1,5 +1,5 @@
 <template>
-  <h1>hello world</h1>
+  <h1 class="header">hello world</h1>
 </template>
 
 <script>
@@ -8,4 +8,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  color: blue;
+}
+</style>
