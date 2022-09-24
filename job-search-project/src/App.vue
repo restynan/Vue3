@@ -1,11 +1,11 @@
 <template>
-  <h1 class="mt-5 bg-yellow-500 pt-3 text-3xl text-center">hello world</h1>
+  <main-nav />
 </template>
 
 <script>
+import MainNav from "@/components/MainNav.vue";
 export default {
   name: "App",
+  components: { MainNav },
 };
 </script>
-
-<style scoped></style>
