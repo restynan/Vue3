@@ -25,8 +25,9 @@
           <profile-image v-if="isUserloggedIn" data-test="profile-image" />
           <actions-button
             v-else
+            text="sign in"
             data-test="login-button"
-           @click="loginUser"
+            @click="loginUser"
           />
         </div>
       </div>
@@ -58,7 +59,7 @@ export default {
   },
   methods: {
     loginUser() {
-      this.isUserloggedIn = true
+      this.isUserloggedIn = true;
     },
   },
 };
