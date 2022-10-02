@@ -31,17 +31,24 @@
           />
         </div>
       </div>
+      <sub-nav v-if="isUserloggedIn" data-test='subnav'/>
     </div>
+
   </header>
 </template>
 
 <script>
 import ActionsButton from "@/components/ActionsButton.vue";
 import ProfileImage from "@/components/ProfileImage.vue";
+import SubNav from "@/components/SubNav.vue";
+
 
 export default {
   name: "MainNav",
-  components: { ActionsButton, ProfileImage },
+  components: { 
+    ActionsButton, 
+    ProfileImage, 
+    SubNav},
   data() {
     return {
       isUserloggedIn: false,
