@@ -1,8 +1,8 @@
 <template>
   <section>
-    <h1 class="font-bold tracking-tighter text-8xl mb-14">
+    <h1 class="font-bold tracking-tighter text-8xl mb-14" data-test="action-phrase">
       <span :class="actionClasses">{{action}}</span>
-      <br/>for everyone</h1>
+      <br/> for everyone</h1>
     <h2 class="font-light text-3xl">Find your next job at Infinexa</h2>
   </section>
 </template>
