@@ -38,9 +38,9 @@
 </template>
 
 <script>
-import ActionsButton from "@/components/ActionsButton.vue";
-import ProfileImage from "@/components/ProfileImage.vue";
-import SubNav from "@/components/SubNav.vue";
+import ActionsButton from "@/components/Shared/ActionsButton.vue";
+import ProfileImage from "@/components/Navigation/ProfileImage.vue";
+import SubNav from "@/components/Navigation/SubNav.vue";
 
 
 export default {

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import MainNav from "@/components/MainNav.vue";
-import HeroPage from "./components/HeroPage.vue";
+import MainNav from "@/components/Navigation/MainNav.vue";
+import HeroPage from "@/components/JobSearch/HeroPage.vue";
 export default {
   name: "App",  
   components: { MainNav, HeroPage },

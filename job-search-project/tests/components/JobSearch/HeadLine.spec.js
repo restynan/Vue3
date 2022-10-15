@@ -1,4 +1,4 @@
-import HeadLine from "@/components/HeadLine.vue"
+import HeadLine from "@/components/JobSearch/HeadLine.vue"
 import { shallowMount } from "@vue/test-utils";
 import { nextTick } from 'vue'
 
@@ -12,7 +12,7 @@ describe("HeadLine",()=>{
   })
 
   it("should display introductory action verb",()=>{
-        const wrapper = shallowMount(HeadLine)
+    const wrapper = shallowMount(HeadLine)
     const actionPhrase = wrapper.find("[data-test='action-phrase']")
     expect(actionPhrase.text()).toBe("Build for everyone")   
   })
@@ -23,7 +23,7 @@ describe("HeadLine",()=>{
   })
 
   it("swaps action verb after first interval",async()=>{
-      const wrapper = shallowMount(HeadLine)
+    const wrapper = shallowMount(HeadLine)
     jest.runOnlyPendingTimers()
     // nextTick use it when you have changed data and wait for the DOM update
     await nextTick()
@@ -31,7 +31,7 @@ describe("HeadLine",()=>{
     const actionPhrase = wrapper.find("[data-test='action-phrase']")
     expect(actionPhrase.text()).toBe("Create for everyone")    
   })
-  
+
   it("removes interval when component disappers ",()=>{  
     const wrapper = shallowMount(HeadLine);
     wrapper.unmount();

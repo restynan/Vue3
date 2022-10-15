@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import SubNav from "@/components/SubNav.vue";
+import SubNav from "@/components/Navigation/SubNav.vue";
 
 describe("SubNav", () => {
   it(" when user is on job page displays job count", () => {

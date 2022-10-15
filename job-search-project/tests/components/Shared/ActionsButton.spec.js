@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils"
-import ActionsButton from "@/components/ActionsButton"
+import ActionsButton from "@/components/Shared/ActionsButton"
 
 describe("ActionsButton", ()=>{
   it("should render the props text", ()=>{
