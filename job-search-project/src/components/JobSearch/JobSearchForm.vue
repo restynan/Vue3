@@ -13,10 +13,9 @@
         <label class="absolute left-0 bottom-16">Role</label>
         <input 
           type="text" 
-          placeholder="Software engineer"  
           v-model="role"
-          @input="updateRole"
-          class="w-full text-lg font-normal focus:outline-none">
+          placeholder="Michigan" 
+          class="w-full text-lg font-normal focus:outline-none"/>
       </div>
       <span 
       class="
@@ -30,11 +29,12 @@
       </span>
       <div class="relative flex items-center flex-1 h-full pl-3">
         <label class="absolute left-0 bottom-16">Where</label>
-        <input 
+        <input  
           type="text" 
-          placeholder="Michigan"  
           v-model="location"
-          class="w-full text-lg font-normal focus:outline-none">
+          placeholder="Michigan" 
+          class="w-full text-lg font-normal focus:outline-none"
+         />
       </div>
       <actions-button cssStyles="secondary" text="Search" class="rounded-r-3xl"></actions-button>
     </div>
@@ -56,6 +56,7 @@ export default{
     }
   },
   methods:{
+  
   
   }
 }
