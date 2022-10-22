@@ -4,9 +4,9 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a :href="url" class="company flex items-center h-full text-xl">
-          {{ companyName }} careers
-        </a>
+        <router-link :to="{name: 'Home'}" class="company flex items-center h-full text-xl">
+          Infinexa careers
+        </router-link>
         <nav class="h-full ml-12">
           <ul class="flex p-0 m-0 h-full">
             <li
@@ -52,8 +52,6 @@ export default {
   data() {
     return {
       isUserloggedIn: false,
-      companyName: "Infinexa",
-      url: "https://careers.google.com",
       menuItems: [
         "Teams",
         "Locations",
