@@ -10,7 +10,7 @@ describe("MainNav", () => {
       }
     }
 
-  })
+  });
 
 
   /*beforeEach(()=>{

@@ -6,7 +6,8 @@
   h-12
   mt-14
   border border-solid border-brand-gray-3
-  rounded-3xl">
+  rounded-3xl"
+  @submit.prevent="searchForJobs">
     <font-awesome-icon :icon="['fas', 'search']" class="mx-4" />
     <div class="flex flex-nowrap flex-1 h-full text-base font-light" >
       <div class="relative flex items-center flex-1 h-full pr-3">
@@ -14,7 +15,8 @@
         <input 
           type="text" 
           v-model="role"
-          placeholder="Michigan" 
+          placeholder="Software Developer" 
+          data-test="role-Input"
           class="w-full text-lg font-normal focus:outline-none"/>
       </div>
       <span 
@@ -33,10 +35,11 @@
           type="text" 
           v-model="location"
           placeholder="Michigan" 
+          data-test="location-Input"
           class="w-full text-lg font-normal focus:outline-none"
          />
       </div>
-      <actions-button cssStyles="secondary" text="Search" class="rounded-r-3xl"></actions-button>
+      <actions-button cssStyles="secondary" text="Search" class="rounded-r-3xl" data-test="form-submit-button"></actions-button>
     </div>
 
   </form>
@@ -56,6 +59,12 @@ export default{
     }
   },
   methods:{
+    searchForJobs(){
+      this.$router.push({
+        name:"JobResults",
+        query: {role:this.role, location:this.location}
+      })
+    }
   
   
   }
