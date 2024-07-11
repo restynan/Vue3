@@ -25,29 +25,9 @@ Component-based Architecture: Modular and reusable components for maintainabilit
 Prerequisites
 Ensure you have the following installed:
 
-Node.js
-npm (Node Package Manager)
-Installation
+- Node.js
+- npm (Node Package Manager)
+
+## Installation
 Clone the repository
-
-sh
-Copy code
 git clone https://github.com/yourusername/your-repo-name.git
-Navigate to the project directory
-
-sh
-Copy code
-cd your-repo-name
-Install dependencies
-
-sh
-Copy code
-npm install
-Running the Application
-To run the application locally, execute the following command:
-
-sh
-Copy code
-npm run serve
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
