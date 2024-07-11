@@ -12,32 +12,6 @@ The `HomeView` component serves as the landing page for the application. It prov
 #### JobResultsView.vue
 The `JobResultsView` component displays the results of a job search. It includes functionality for navigating back to the home page and displays test data to verify routing.
 
-```vue
-<template>
-  <div class="about">
-    <h1>Job results</h1>
-    <button @click="goToHomePage">Go to Home Page</button>
-    <h2>{{ test }}</h2>
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'JobResultsView', 
-  computed: {
-    test() {
-      console.log(this.$router);
-      return "test";
-    }
-  },
-  methods: {
-    goToHomePage() {
-      this.$router.push({ name: "Home" });
-    }
-  }
-}
-</script>
-
 ## Technologies Used
 Vue.js: The progressive JavaScript framework for building user interfaces.
 Vue Router: The official router for Vue.js to handle navigation.
